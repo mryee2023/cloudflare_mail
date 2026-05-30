@@ -1,0 +1,19 @@
+name = "tg-bot-mailer"
+main = "src/index.ts"
+compatibility_date = "2024-05-12"
+
+# ---- 非敏感配置（可直接写在这里）----
+[vars]
+# 你的邮箱域名（邮件地址会拼成 <name>@EMAIL_DOMAIN）
+EMAIL_DOMAIN = "example.com"
+# “发送到 worker” 时使用的 Email Worker 名称
+WORKER_NAME = "my-email-relay"
+# 允许操作 bot 的 Telegram user id，多个用英文逗号分隔（找 @userinfobot 获取）
+ALLOWED_USER_IDS = "123456789"
+# 域名的 Zone ID（在 Cloudflare 域名 Overview 页右下角）
+EMAIL_ZONE_ID = "your-zone-id"
+
+# ---- 敏感信息用 secret，不要写在这里 ----
+# wrangler secret put TELEGRAM_BOT_TOKEN
+# wrangler secret put TELEGRAM_SECRET_TOKEN
+# wrangler secret put EMAIL_API_TOKEN

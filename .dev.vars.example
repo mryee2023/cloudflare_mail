@@ -1,0 +1,4 @@
+# 本地开发用的 secret（复制为 .dev.vars，不要提交到 git）
+TELEGRAM_BOT_TOKEN="123456:ABC-your-bot-token"
+TELEGRAM_SECRET_TOKEN="自己随机生成的一串字符串"
+EMAIL_API_TOKEN="带 Email Routing 编辑权限的 token"

@@ -1,0 +1,17 @@
+{
+  "name": "tg-bot-mailer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Telegram bot on Cloudflare Workers to manage Email Routing rules",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "set-webhook": "node scripts/set-webhook.mjs",
+    "delete-webhook": "node scripts/set-webhook.mjs --delete"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240512.0",
+    "typescript": "^5.4.5",
+    "wrangler": "^3.57.0"
+  }
+}
